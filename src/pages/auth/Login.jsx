@@ -5,8 +5,7 @@ import { Eye, EyeOff, User, Lock } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../../redux/reducers/authSlice';
 import styles from '../../styles/Login.module.scss';
-import logo from '../../../public/assets/53fbbc6b2066c1e81a599c0fc208dd6e944c6759.png';
-
+import logo from '../../public/assets/53fbbc6b2066c1e81a599c0fc208dd6e944c6759.png'
 const LoginComponent = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
