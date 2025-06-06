@@ -1,0 +1,12 @@
+// styles/Layout.module.scss
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.pageContent {
+  flex: 1;
+  background-color: #f9fafb;
+  padding: 24px;
+  overflow-y: auto;
+}

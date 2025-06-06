@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.sidebarContainer {
+  width: 280px;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+
+  .sidebarMenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 0;
+
+    .logoSection {
+      padding: 0 20px 30px 20px;
+      border-bottom: 1px solid #f3f4f6;
+      margin-bottom: 30px;
+
+      .logoPlaceholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .logoImage {
+          max-width: 250px;
+          max-height: 50px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .menuSection {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 0 15px;
+
+      .menuItem {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 12px 15px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        font-weight: 500;
+        color: #6b7280;
+
+        .menuIcon {
+          font-size: 20px;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .menuText {
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        &:hover {
+          background-color: #f0f9ff;
+          color: #1193D0;
+          transform: translateX(5px);
+        }
+
+        &.active {
+          background: linear-gradient(135deg, #1193D0 0%, #0ea5e9 100%);
+          color: white;
+          box-shadow: 0 4px 12px rgba(17, 147, 208, 0.3);
+
+          .menuIcon,
+          .menuText {
+            color: white;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 32px;
+            background: #1193D0;
+            border-radius: 0 4px 4px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .sidebarContainer {
+    width: 70px;
+    
+    .sidebarMenu {
+      .logoSection {
+        .logoPlaceholder {
+          .logoImage {
+            max-width: 40px;
+            max-height: 40px;
+          }
+        }
+      }
+      
+      .menuSection {
+        .menuItem {
+          justify-content: center;
+          padding: 12px 8px;
+          
+          .menuText {
+            display: none;
+          }
+          
+          &:hover {
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}

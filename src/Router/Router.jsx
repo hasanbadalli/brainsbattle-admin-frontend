@@ -4,6 +4,10 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from '../pages/Home/Home';
 import LoginComponent from '../pages/auth/Login';
+import Statistic from '../pages/statistic/Statistic';
+import Game from '../pages/game/Game';
+import Quiz from '../pages/quiz/Quiz';
+import User from '../pages/user/User';
 
 function AppContent() {
   const navigate = useNavigate();
@@ -28,6 +32,10 @@ function AppContent() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path="/login" element={<LoginComponent />} />
+        <Route path='/statistic' element={<Statistic/>}/>
+        <Route path='/game' element={<Game/>}/>
+        <Route path='/quiz' element={<Quiz/>}/>
+        <Route path='/user' element={<User/>}/>
       </Routes>
       
       <ToastContainer
