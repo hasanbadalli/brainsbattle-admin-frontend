@@ -2,7 +2,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import BrainsSidebar from '../components/burgermenu/BrainsMenu'; // mövcud komponent
-
 import styles from '../../styles/Layout.module.scss';
 
 const MainLayout = () => {

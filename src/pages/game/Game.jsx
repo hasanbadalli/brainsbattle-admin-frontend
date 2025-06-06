@@ -5,7 +5,7 @@ const Game = () => {
   return (
     <>
         <BrainsSidebar/>
-            <p></p>
+
     </>
   )
 }

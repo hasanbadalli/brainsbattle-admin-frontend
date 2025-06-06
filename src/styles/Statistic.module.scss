@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.pageWrapper {
+  display: flex;
+  font-family: Poppins;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 30px;
+  margin-left: 280px;
+  font-weight: bold;
+}
+
+.topStats {
+  justify-content: space-around;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  .statBox {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px #efefef;
+    border: 1px solid #efefef;
+    flex: 1;
+
+    h4 {
+      font-size: 14px;
+      color: #1a678b;
+    }
+
+    .number {
+      font-size: 35px;
+      font-weight: 700;
+      color: #0a4b78;
+
+      .up {
+        font-size: 14px;
+        color: green;
+        margin-left: 5px;
+        background-color: #dcffd5;
+        border-radius: 10px;
+      }
+
+      .down {
+        font-size: 14px;
+        color: red;
+        margin-left: 5px;
+        background-color: #ffd5d5;
+        border-radius: 10px;
+      }
+    }
+
+    .info {
+      font-size: 14px;
+      color: #888;
+      font-weight: 500;
+      b {
+        font-weight: bold;
+        color: #3E8922;
+      }
+    }
+
+    .infotwo{
+          font-size: 14px;
+      color: #888;
+      font-weight: 500;
+      b {
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+}
+
+.middleSection {
+  display: flex;
+
+  gap: 50px;
+
+  .chartBox {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #eee;
+
+    h4 {
+      font-weight: bold;
+      font-size: 25px;
+      color: #1A678B;
+    }
+    .period {
+      float: right;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .fakeChart {
+      height: 160px;
+      background: #f3f3f3;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+  }
+
+  .summaryBox {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #eee;
+    height: 250px;
+    h5 {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #1a678b;
+    }
+
+    .numberSmall {
+      font-size: 30px;
+      font-weight: bold;
+      color: #1a678b;
+      .up {
+        font-size: 16px;
+        color: #338922;
+        margin-left: 5px;
+        background-color: #dcffd5;
+        border-radius: 10px;
+      }
+
+      .down {
+        font-size: 13px;
+        color: red;
+        margin-left: 5px;
+      }
+    }
+  }
+}
